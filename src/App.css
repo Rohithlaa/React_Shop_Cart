@@ -1,38 +1,58 @@
-.App {
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.App_header{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  flex-wrap: wrap;
+  align-items: center;
+  
   }
-  to {
-    transform: rotate(360deg);
+
+  .cards{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,200px);
+    padding: 40px;
+    margin: 20px;
+    /* grid-auto-rows: minmax(50px, auto); */
+    gap: 10px;
+    border: 1px solid silver;
+    box-shadow: 2px 1px 38px -4px rgba(19,21,21,0.75) inset;
+-webkit-box-shadow: 2px 1px 38px -4px rgba(19,21,21,0.75) inset;
+-moz-box-shadow: 2px 1px 38px -4px rgba(19,21,21,0.75) inset;
   }
-}
+
+  .button{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .button:hover{
+    color: white;
+    background-color: rgba(122, 122, 212, 0.575);
+  }
+ .header{
+   height: 70px;
+   padding-top: 20px;
+   text-align: center;
+   background-color:rgb(36, 82, 63);
+ }
+  .header_button{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: whitesmoke;
+
+  }
